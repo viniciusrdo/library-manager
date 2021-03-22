@@ -1,0 +1,78 @@
+<!DOCTYPE html>   
+<html>   
+<head>  
+<meta name="viewport" content="width=device-width, initial-scale=1">  
+<title> SGB</title>  
+<style>   
+Body {  
+  font-family: Calibri, Helvetica, sans-serif;  
+  background-color: rgb(69, 58, 228);  
+}  
+button {   
+       background-color: rgb(21, 8, 204);   
+       width: 40%;  
+        color: #0C0032;   
+        padding: 15px;           
+        margin: 10px 0px;   
+        border: none;   
+        cursor: pointer;
+        text-align: center;  
+         }       
+ input[type=text], input[type=password] {   
+        width: 80%;   
+        margin: 8px 0;  
+        padding: 6px 20px;   
+        display: inline-block;   
+        border: 2px solid #0C0032;   
+        box-sizing: border-box;   
+    }  
+ button:hover {   
+        opacity: 0.7;   
+
+    }   
+  .cancelbtn {   
+        width: auto;   
+        padding: 10px 18px;  
+        margin: 10px 5px;  
+    }   
+.container {   
+
+        padding: 20px;   
+        background-color: #C5C6C7;   
+        border: 7px solid rgb(15, 15, 15); 
+        width: 650px;    
+        position: relative;
+        top: 49%;
+        margin-top: 0px;
+        left: 27%;  
+    }
+    .child {
+        width: 700px;
+        height: 42px;
+        position: relative;
+        top: 49%;
+        margin-top: 0px; 
+        left: 31%;
+    } 
+</style>   
+</head>    
+<body>    
+    <br><br>
+    <center> <h1>
+                    Sistema Gerenciador de Bibliotecas
+            </h1> 
+    </center>
+    <br><br><br><br><br><br>  
+    <form method="post" action="ServletAutentica">  
+        <div class="container">   
+            <label>Usuario :     </label>   
+            <input type="text" placeholder="Insira o Usuario" name="login" required>  <br>
+            <label>  Senha .  :  </label>   
+            <input type="password" placeholder="Insira a Senha" name="password" required>  
+                <div class="child">
+                    <button type="submit" style="color:white">Login</button>   
+                </div>
+        </div>   
+    </form>     
+</body>     
+</html>  
